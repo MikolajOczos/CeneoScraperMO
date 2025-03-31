@@ -1,0 +1,14 @@
+opinion_structure = [
+    # Component       Variable         Selector
+    ("opinion_id",    "opinion_id",    "div.js_product-review::attr(data-entry-id)"),
+    ("author",        "author",        "span.user-post__author-name::text"),
+    ("recommendation", "recommend",    "span.user-post__author-recomendation > em::text"),
+    ("stars",         "stars",         "span.user-post__score-count::text"),
+    ("content",       "content",       "div.user-post__text::text"),
+    ("pros",          "pros",          "div.review-feature__col:has(> div.review-feature__title--positives) > div.review-feature__item::text"),
+    ("cons",          "cons",          "div.review-feature__col:has(> div.review-feature__title--negatives) > div.review-feature__item::text"),
+    ("upvotes",       "upvotes",       "button.vote-yes > span::text"),
+    ("downvotes",     "downvotes",     "button.vote-no > span::text"),
+    ("published",     "published",     "span.user-post__published > time:nth-child(1)::attr(datetime)"),
+    ("purchased",     "purchased",     "span.user-post__published > time:nth-child(2)::attr(datetime)")
+]
