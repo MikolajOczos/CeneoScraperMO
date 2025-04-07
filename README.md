@@ -17,7 +17,7 @@ opinion | opinion | ds_product-review:not(.user-post--highlight)|
 |list of product disadvantages | cons | div.review-feature__item--negative | 
 |how many users think that opinion was helpful |upvotes| button.vote-yes["data-total-vote"]|
 |how many users think that opinion was unhelpful | downvotes | button.vote-no["data-total-vote"]|
-|publishing date | published | span.user-post__published > time:nth-child(1)["datetime] |
+|publishing date | published | span.user-post__published > time:nth-child(1)["datetime"] |
 |purchase date | purchased | span.user-post__published > time:nth-child(2)["datetime] |
 
 
